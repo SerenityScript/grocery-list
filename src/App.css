@@ -1,0 +1,116 @@
+body {
+  background-color: #ECDA9D;
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  min-height: 90vh;
+  width: 390px;
+  background-color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.groceryImage {
+  width: 390px;
+}
+
+.groceryCont {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+}
+
+.crossed {
+  text-decoration: line-through 2px red;
+  background-color: rgba(247, 143, 85, 0.2);
+  border: 1px solid #F09460;
+
+  -webkit-text-decoration-line: line-through;
+  -webkit-text-decoration-color: red;
+  -webkit-text-decoration-thickness:2px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+h1 {
+  font-family: "Ms Madi", cursive;
+  font-weight: 400;
+  font-size: 48px;
+  color: rgba(19, 71, 18, 1);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+li, button, input {
+  font-family: "Edu SA Beginner", cursive;
+  font-size: 20px;
+  height: 35px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+li, input {
+  color: #134712;
+  margin-bottom: 5px;
+}
+
+li {
+  background-color: #E1E5CA;
+  border: 1px solid #8AAF3C;
+  display: flex;
+  align-items: center;
+}
+
+.UserInput {
+  text-align: center;
+  border: 1px solid #d7cec5;
+}
+
+.Icon {
+  margin-right: 5px;
+}
+
+.btnAdd {
+  background-color: #8AAF3C;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.btnDelete {
+  background-color: #F09460;
+  border: none;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.Bag {
+  margin-top: auto;
+  position: relative;
+  animation: rotateAnimation 2s linear infinite alternate;
+}
+
+@keyframes rotateAnimation {
+  from {
+      transform: rotate(-8deg);
+  }
+  to {
+      transform: rotate(8deg);
+  }
+}
+
+@media all and (max-width: 280px) {
+  .App {
+    width: 280px;
+  }
+
+  .groceryImage {
+    width: 280px;
+  }
+}
