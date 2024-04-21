@@ -42,7 +42,7 @@
     <a href="https://github.com/SerenityScript/grocery-list"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/SerenityScript/grocery-list">View Demo</a>
+    <a href="https://grocery-list-react.netlify.app/">View Demo</a>
   </p>
 </div>
 
